@@ -28,19 +28,19 @@ def BMIFunction():
         sonuc = value1 / (value2 * value2)
         print(sonuc)
 
-        if sonuc < 18.5:
+        if sonuc <= 18.5:
             label4.config(text=f"Underweight :(")
             label5.config(text=f"{sonuc}")
-        elif 18.5 < sonuc < 24.9:
+        elif 18.5 <= sonuc <= 24.9:
             label4.config(text=f"Normal weight :)")
             label5.config(text=f"{sonuc}")
-        elif 25 < sonuc < 29.9:
+        elif 25 <= sonuc <= 29.9:
             label4.config(text=f"Overweight :/")
             label5.config(text=f"{sonuc}")
-        elif 30 < sonuc < 34.9:
+        elif 30 <= sonuc <= 34.9:
             label4.config(text=f"Obesity!")
             label5.config(text=f"{sonuc}")
-        elif sonuc > 35:
+        elif sonuc >= 35:
             label4.config(text=f"Extrame Obesity!!!")
             label5.config(text=f"{sonuc}")
     except ValueError:
