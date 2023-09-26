@@ -21,7 +21,7 @@ window.geometry("+%d+%d" % (x, y))
 '---------------------------BMI FUNCTION-------------------'
 
 
-def BMIFunction(*args):
+def BMIFunction():
     try:
         value1 = float(entry1.get())
         value2 = float(entry2.get()) / 100
@@ -70,7 +70,7 @@ label5.place(x=150, y=200, anchor="center")
 '-------------------Entry---------------------------'
 
 
-def entryClick(event):
+def entryClick(_event):
     if entry1.get() == "For exp:75":
         entry1.delete(0, "end")
         entry1.config(background="black",
@@ -79,7 +79,7 @@ def entryClick(event):
         print(entry1.get())
 
 
-def entryClick2(event):
+def entryClick2(_event):
     if entry2.get() == "For exp:170":
         entry2.delete(0, "end")
         entry2.config(background="black",
@@ -127,4 +127,3 @@ button1.config(borderwidth=2,
 button1.place(x=150, y=170, anchor="center")
 button1.bind()
 window.mainloop()
-
